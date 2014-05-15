@@ -47,7 +47,8 @@ namespace CustomUserStore.App_Start
         public Task<string> GetPasswordHashAsync(TUser user)
         {
 
-            user.PasswordHash = "AED7HfKdNxNU0C/ZsWqcSlirrdFqQ2HBiquLnKycTMj6GQ09FbNuDNSID2A589TDhw==";
+            //user.PasswordHash = "AED7HfKdNxNU0C/ZsWqcSlirrdFqQ2HBiquLnKycTMj6GQ09FbNuDNSID2A589TDhw==";
+            user.PasswordHash = "Password123!";
 
             return Task.FromResult(user.PasswordHash);
         }

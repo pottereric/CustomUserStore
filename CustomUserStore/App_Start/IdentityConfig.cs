@@ -37,6 +37,9 @@ namespace CustomUserStore
                 RequireLowercase = true,
                 RequireUppercase = true,
             };
+
+            manager.PasswordHasher = new ClearPassword();
+
             var dataProtectionProvider = options.DataProtectionProvider;
             if (dataProtectionProvider != null)
             {
